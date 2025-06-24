@@ -1,4 +1,4 @@
 package com.springboot.MoodTracker.Service;
 
-public class CalculationsService {
+public class DailyLogsService {
 }

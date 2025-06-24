@@ -1,0 +1,9 @@
+CREATE TABLE daily_logs(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id VARCHAR(36) UNIQUE,
+    mood INT,
+    sleep_hours DECIMAL,
+    reflection_blurb TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES user(id)
+);

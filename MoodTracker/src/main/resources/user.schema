@@ -1,0 +1,9 @@
+CREATE TABLE user(
+    id INT NOT NULL PRIMARY KEY UNIQUE,
+    email VARCHAR(50) UNIQUE,
+    password_hash VARCHAR(255),
+    name VARCHAR(30),
+    age INT
+    gender VARCHAR(50),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
